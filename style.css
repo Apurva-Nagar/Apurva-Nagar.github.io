@@ -1,94 +1,13 @@
 
-.terminal-text{
-  color: lime; 
+#typing_text{
+  color: lime;
   font-family: "Courier";
   font-size: 20px;
   margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
   width: 30em;
-  animation: type 2s steps(100, end); 
-    text-align: justify;
+  text-align: left;
 }
 
-.terminal-text:nth-child(2){
-  animation: type2 6s steps(60, end);
-}
-
-.terminal-text:nth-child(3){
-  animation: type3 10s steps(60, end);
-}
-
-.terminal-text:nth-child(4){
-  animation: type4 14s steps(60, end);
-}
-
-.terminal-text:nth-child(5){
-  animation: type5 16s steps(60, end);
-}
-
-.terminal-text:nth-child(6){
-  animation: type5 18s steps(60, end);
-}
-
-
-.terminal-text a{
-  color: lime;
-  text-decoration: underline;
-}
-
-span{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
- from { width: 40; }  
-} 
-
-@keyframes type3{
-  0%{width: 0;}
-  20%{width: 0;}
-  40%{width: 0;}
-  60%{width: 0;}
-  80%{ width: 0;}
-  100%{width: 100;} 
-} 
-
-@keyframes type4{
-  0%{width: 0;}
-  10%{width: 0;}
-  20%{width: 0;}
-  40%{width: 0;}
-  50%{ width: 0;}
-  60%{width: 0;}
-  80%{width: 0;}
-  90%{width: 0;}
-  100%{width: 100;}
-} 
-
-@keyframes type5{
-  0%{width: 0;}
-  10%{width: 0;}
-  20%{width: 0;}
-  40%{width: 0;}
-  50%{ width: 0;}
-  60%{width: 0;}
-  80%{width: 0;}
-  90%{width: 0;}
-  100%{width: 100;}
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-::selection{
-  background: black;
-}
 .terminal {
     background-color: black;
     height: 300px;
@@ -117,4 +36,19 @@ span{
     border: none;
     border-radius: 0px 0px 0px 0px;
     margin-left: 25px;
+}
+
+#typing_text:after {
+  visibility: visible;
+  content: '';
+  background-color: forestgreen;
+  display: inline-block;
+  position: relative;
+  width: 0.5em;
+  height: 1em;
+  top: 5px;
+  margin-left: 0;
+  -moz-animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+  -webkit-animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+  animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
 }
