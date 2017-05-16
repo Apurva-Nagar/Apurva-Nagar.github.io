@@ -14,10 +14,11 @@
     </ul>
    </div>
         <center>
-            <form action="https://formspree.io/apurvanagar@gmail.com" method="POST">
+            <form action="https://formspree.io/apurvanagar@gmail.com" method="POST" class="cform">
                 <input type="text" name="name">
-                <input type="email" name="_replyto">
-                <input type="hidden" name="_subject" value="New submission!" />
+                <input type="email" name="_replyto" required>
+                <input name="_subject" value="New submission!">
+                <textarea name="message" placeholder="Type you message here..." required></textarea>
                 <input type="submit" value="Send">
                 <input type="hidden" name="_next" value="https://apurva-nagar.github.io/" />
             </form> 
