@@ -10,7 +10,7 @@ input[type=text], input[type=email] {
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid #555;
-    color: white;
+    color: black;
     display: block;
 }
 
