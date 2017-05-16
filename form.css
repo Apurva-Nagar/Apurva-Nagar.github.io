@@ -3,19 +3,31 @@
   display: inline-block;
 }
 
-input[type=text] {
+input[type=text], input[type=email], {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #555;
     color: white;
+    display: inline-block;
 }
 
-
 input[type=text]:focus {
-    border: 3px solid #555;
+    border-bottom: 2px solid #0033cc;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #0033cc;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  ` display: inline-block;
 }
 
 textarea {
@@ -23,7 +35,7 @@ textarea {
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    background-color: white;
+    border: 2px solid #0033cc;
     resize: none;
+    display: inline-block;
 }
