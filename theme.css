@@ -15,7 +15,7 @@ body {
   background-size: cover;
     font-family: 'Open Sans', sans-serif;
     color: white;
-    
+    margin: 0px;
 }
 
 
@@ -35,19 +35,21 @@ body {
 
 .title{
 	width: 30%;
-    position: relative;
+    	position: relative;
 	top:50px;
 	left: 50px; 
 	font-family: sans-serif;
 	font-weight: normal;
 	color: white;
-    margin-bottom: 0px;
-    padding-top: 22px;
-    font-size: 35px;
+    	margin-bottom: 0px;
+    	padding-top: 22px;
+    	margin-left: 150px;
+    	margin-right: 250px;
+    	font-size: 35px;
 }
 
 .nav-bar{
-	width: 70%;
+	width: 40%;
 }
 
 
@@ -91,7 +93,7 @@ h1 {
 }
 
 div {
-    margin-left: 150px;
+    margin: 0px;
     display: inline-block;
 }
 
