@@ -16,7 +16,7 @@
     margin-right: auto;
     margin-left: auto;
     border-radius: 0px;
-    align: center;
+    float: left;
 }
 
 .terminal-nav {
