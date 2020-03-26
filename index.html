@@ -2,6 +2,18 @@
 <head>
     <title>Apurva Nagar</title>
     <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="typed.js"></script>
+    <script>
+      $(function(){
+        $("#typing_text").typed({
+            strings: ["I'm a web developer and programmer based in Bangalore, India. I mainly do backend projects in Python's Django Framework. In my free time I like creating web applications, solving problems on online judges, & creating fun python scripts. I'm currently studying Information Science Engineering at New Horizon College of Engineering. <br/> Happy coding :)"],
+            typeSpeed: 50,
+            showCursor: false
+        });
+    });
+    </script>
 </head>
     <body>
         <div class="header">
@@ -24,7 +36,12 @@
         </div>
             </div>
             <br/>
-            
+            <br/>
+            <div class="terminal">
+                <div class="terminal-nav"><img class="terminal-img" src="terminal.png" align="left" /><p align="center">Terminal Window (Default) - X017f9</p></div>
+                <p id="typing_text"></p>
+            </div>
+      
         <div class="footer">
             <p style="margin-right: 180px; margin-bottom:0px;"><b>Copyright &copy; 2020 - Apurva Nagar.</b> Hosted with &#x2764; and coffee on <a href="https://github.com/" style="color: white; text-decoration: underline;"><b>Github</b></a>.
             <br/> All rights Reserved. All Logos, TM and Images belong to their respective owner.
