@@ -17,6 +17,7 @@
     margin-left: auto;
     border-radius: 0px;
     float: right;
+    display: inline;
 }
 
 .terminal-nav {
