@@ -1,20 +1,35 @@
 <html>
-<head>
-    <title>About</title>
-    <link rel="stylesheet" type="text/css" href="theme.css">
-    <link href="form.css" rel="stylesheet">
-</head>
+    <head>
+        <title>Apurva Nagar - About</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./style/theme.css">
+        <link rel="stylesheet" type='text/css' href="./style/form.css">
+    </head>
+
     <body>
-        <div class="header">
-    	<h2 class="title"><b>&#60; Apurva Nagar &#47;&#62; </b> <p class="logo-text">WEB DEV | CODER | PYTHON FAN BOY</p> </h1>
-    	<ul class="nav-bar">
-         <li><a href="index.html" >Home</a></li>
-         <li><a href="https://github.com/Apurva-Nagar/Apurva-Nagar.github.io/blob/master/Resume%20Internshala%202020.pdf?raw=true">Resume</a></li>
-         <li><a href="contact.html" class="current">Contact</a></li>
-    </ul>
-   </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" href="index.html"><h3><b>&#60; Apurva Nagar &#47;&#62;</b></h3></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=".\media\Resume 2020.pdf" target="_blank" >Resume</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <center>
-            <form action="https://formspree.io/apurvanagar@gmail.com" method="POST" class="cform">
+            <form action="https://formspree.io/f/apurvanagar@gmail.com" method="POST" class="cform">
                 <input type="text" name="name" placeholder="Your Name">
                 <br/>
                 <input type="email" name="_replyto" placeholder="Email ID" required>
@@ -24,7 +39,7 @@
                 <textarea name="message" placeholder="Type you message here..." required></textarea>
                 <br/>
                 <input type="submit" value="Send">
-                <input type="hidden" name="_next" value="https://apurva-nagar.github.io/" />
+                <!-- <input type="hidden" name="_next" value="https://apurva-nagar.github.io/" /> -->
             </form> 
         </center>
     </body>
